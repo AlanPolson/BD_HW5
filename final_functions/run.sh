@@ -7,7 +7,7 @@ LOCAL_OUTPUT=$5
 STREAMING_JAR=/opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-streaming.jar
 hadoop fs -rm -r -skipTrash "${OUTPUT}"
 hadoop jar ${STREAMING_JAR} \
-    -D mapred.job.name='BDM_Lab5' \
+    -D mapred.job.name='BDM_Hw5' \
     -D mapred.map.tasks=2 \
     -files "${MAPPER}","${REDUCER}" \
     -mapper "${MAPPER}" \
